@@ -40,11 +40,33 @@ body {
   left:40px;
 }
 .logo {
-    height: 30px;
-    width: 60px;
+    height: 35px;
+    /* the w would be based on h */
 }
-.text-hero {
-  color: white;
+
+.text-box {
   position: absolute;
-  text-align: center;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
+
+.heading-primary {
+  color: white;
+  text-transform: uppercase;
+}
+
+.heading-primary-main {
+  display: block;
+  font-size: 4rem;
+  letter-spacing: 1.6rem;
+  font-weight: 400;
+}
+
+.heading-primary-sub {
+  display: block;
+  font-weight: 700;
+  font-size: 1rem;
+  letter-spacing: 0.77rem;
+}
+
