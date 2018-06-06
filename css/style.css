@@ -6,3 +6,37 @@ Medium green: #55c57a
 Dark green: #28b485
 
 */
+* {
+  padding:10px;
+}
+
+.hero {
+  background: url("../img/hero.jpg") no-repeat;
+  background-size: cover;
+  height: 90vh;
+  position: relative;
+  clip-path: polygon(0 0, 100% 0%, 99% 87%, 0 100%)
+
+
+}
+
+.bg-overlay {
+  background-color : #7ed56f;
+  position: absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height: inherit;
+  opacity: 0.4;
+}
+.logo {
+  position: absolute;
+  height: 30px;
+  width: 30px;
+}
+
+.text-hero {
+  color: white;
+  position: absolute;
+  text-align: center;
+}
