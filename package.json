@@ -1,0 +1,19 @@
+{
+  "name": "template-css",
+  "version": "1.0.0",
+  "description": "landing Page",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mmianchi/template-css.git"
+  },
+  "author": "Mahshid",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mmianchi/template-css/issues"
+  },
+  "homepage": "https://github.com/mmianchi/template-css#readme"
+}
