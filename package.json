@@ -1,7 +1,7 @@
 {
-  "name": "template-css",
+  "name": "Mahshid",
   "version": "1.0.0",
-  "description": "landing Page",
+  "description": "Landing Page",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/mmianchi/template-css/issues"
   },
-  "homepage": "https://github.com/mmianchi/template-css#readme"
+  "homepage": "https://github.com/mmianchi/template-css#readme",
+  "devDependencies": {
+    "node-sass": "^4.9.1"
+  }
 }
