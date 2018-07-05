@@ -1,13 +1,6 @@
-/*
-COLORS:
-
-Light green: #7ed56f
-Medium green: #55c57a
-Dark green: #28b485
-
-*/
-
-
+$color-primary:#7ed56f;
+$color-primary-light:#c5c225;
+$color-primary-dark:#e0700d;
 *,
 *::after,
 *::before {
@@ -31,7 +24,7 @@ body {
 }
 
 .header {
-  background-image: linear-gradient( to right bottom, rgba(197, 194, 37, 0.8), rgba(224, 112, 13, 0.8)), url("../img/1350.jpg");
+  background-image: linear-gradient( to right bottom, rgba($color-primary-light, 0.8), rgba($color-primary-dark, 0.8)), url("../img/1350.jpg");
   background-size: cover;
   height: 95vh;
   background-position: bottom;
