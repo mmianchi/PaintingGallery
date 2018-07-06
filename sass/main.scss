@@ -1,6 +1,7 @@
 $color-primary:#7ed56f;
 $color-primary-light:#c5c225;
 $color-primary-dark:#e0700d;
+$color-grey-dark:#777;
 *,
 *::after,
 *::before {
@@ -19,7 +20,7 @@ body {
   /* font-size: 1.6rem; */
   line-height: 1.7;
   padding: 1rem 3rem;
-  color: #777;
+  color: $color-grey-dark;
   box-sizing: border-box;
 }
 
@@ -128,7 +129,7 @@ body {
 .btn:hover {
   transform: translateY(-3px);
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, .2);
-  color: #777;
+  color: $color-grey-dark;
 }
 
 .btn:active {
@@ -139,7 +140,7 @@ body {
 
 .btn--white {
   background-color: #fff;
-  color: #777;
+  color: $color-grey-dark;
 }
 
 .btn::after {
