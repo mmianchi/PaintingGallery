@@ -1,0 +1,29 @@
+body {
+  font-family: "lato", sans-serif;
+  font-weight: 400;
+  /* font-size: 1.6rem; */
+  line-height: 1.7;
+  padding: 1rem 3rem;
+  color: $color-grey-dark;
+}
+
+.heading-primary {
+  color: $color-white;
+  text-transform: uppercase;
+  backface-visibility: hidden;
+  margin-bottom: 5rem;
+  &--main {
+    display: block;
+    font-size: 6rem;
+    letter-spacing: 3rem;
+    font-weight: 400;
+    animation: moveInLeft 2s ease-out;
+  }
+  &--sub {
+    display: block;
+    font-weight: 700;
+    font-size: 1.8rem;
+    letter-spacing: 1.2rem;
+    animation: moveInRight 2s ease-out;
+  }
+}
