@@ -9,6 +9,19 @@
 html {
   //definition of 1rem
   font-size: 62.5%;
+
+  @include respond(phone) {
+    font-size: 50%;
+  }
+  @include respond(phone) {
+    font-size: 60%;
+  }
+  @include respond(phone) {
+    font-size: 70%;
+  }
+  @include respond(phone) {
+    font-size: 80%;
+  }
 }
 
 body {
