@@ -1,2 +1,2 @@
-# template-css
+# PaintingGallery
 npm run compile:sass
