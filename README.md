@@ -1,2 +1,2 @@
 # PaintingGallery
-npm run compile:sass
+https://painting-gallery.netlify.com/
