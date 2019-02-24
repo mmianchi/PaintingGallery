@@ -2,22 +2,17 @@
 @import "abstract/mixins";
 @import "abstract/variables";
 
-@import "base/animations";
 @import "base/base";
+@import "base/animation";
 @import "base/typography";
-@import "base/utilities";
+@import "base/utilitie";
 
 @import "components/button";
-@import "components/card";
 @import "components/composition";
 @import "components/feature-box";
-
-@import "layout/grid";
+@import "components/section-class";
 
 @import "layout/header";
+@import "layout/grid";
 
-@import "pages/homes";
-
-
-
-
+@import "pages/home";

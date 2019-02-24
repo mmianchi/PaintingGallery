@@ -1,32 +1,7 @@
-@mixin Clearfix {
+@mixin clearfix {
   &::after {
-    content: "";
+    content: '';
     display: table;
     clear: both;
   }
-}
-
-
-// breakpont argument choices:
-// - phone          600px
-// - tab-port       900px
-// - tab-land      1200px
-// - big-desktop   1800px
-
-// 1em= 16px
-
-@mixin respond($breakpoint) {
-  @if $breakpoint == phone {
-    @media(max-with: 37.5em) { @content };
-  }
-  @if $breakpoint == tab-port {
-    @media(max-with: 56.25em) { @content };
-  }
-  @if $breakpoint == tab-land {
-    @media(max-with: 75em) { @content };
-  }
-  @if $breakpoint == big-desktop {
-    @media(max-with: 112.5em) { @content };
-  }
-
 }

@@ -1,43 +1,58 @@
 .header {
-  background-image: linear-gradient( to right bottom, rgba($color-primary-light, 0.8), rgba($color-primary-dark, 0.8)), url("../img/1350.jpg");
+  background-image: -webkit-gradient(linear,
+    right top, left bottom,
+    from(rgba(153, 133, 133, 0.8)),
+    to(rgba(62, 52, 52, 0.7))),
+    url("../img/hero.jpg");
+  background-image: linear-gradient(to left bottom,
+    rgba(153, 133, 133, 0.8),
+    rgba(62, 52, 52, 0.7)),
+    url("../img/hero.jpg");
   background-size: cover;
-  height: 95vh;
-  background-position: bottom;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 90vh;
   position: relative;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0% 100%);
-  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0% 100%);
-  
+  -webkit-clip-path: polygon(0 0, 100% 0%, 100% 89%, 0% 100%);
+          clip-path: polygon(0 0, 100% 0%, 100% 89%, 0% 100%);
+  // -webkit-clip-path: ellipse(100% 55% at 48% 44%);
+  // clip-path: ellipse(100% 55% at 48% 44%);
+
   &__logo-box {
     position: absolute;
-    top: 4rem;
-    left: 4rem;
-  }
-  &__logo {
-    height: 6.5rem;
-    /* the w would be based on h */
-  }
-  &__text-box {
-    position: absolute;
-    top: 40%;
+    top: 20%;
     left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -webkit-animation: rotate .3s;
+    animation: rotate .3s;
+  }
+
+  &__logo {
+    height: 9.5rem;
+     color: red;
+  }
+
+  &__text-hero {
+    position: absolute;
+    top: 53%;
+    left: 50%;
+    color: $color-white;
+    -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     text-align: center;
+    margin-top: 1rem;
   }
-}
 
+  &__social-media {
+    position: absolute;
+    top: 80%;
+    left: 85%;
 
-.heading-secondary {
-  font-size: 3.5rem;
-  text-transform: uppercase;
-  font-weight: 700;
-  display: inline-block;
-  background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
-  -webkit-background-clip: text;
-  color: transparent;
-  letter-spacing: 2px;
-  transition:all .2s;
-  &:hover {
-    transform: skewY(2deg) skewX(15deg) scale(1.1);
-    text-shadow: .5rem 1rem 2rem rgba($color-black, .2)
+    a {
+      color: white;
+      font-size: 1.7rem;
+      padding-right: 20px;
+    }
   }
 }

@@ -1,34 +1,46 @@
 body {
-  font-family: "lato", sans-serif;
+  font-family: 'KoHo', sans-serif;
   font-weight: 400;
-  /* font-size: 1.6rem; */
   line-height: 1.7;
-  padding: 1rem 3rem;
-  color: $color-grey-dark;
+  padding: 3rem;
 }
 
-.heading-primary {
-  color: $color-white;
+h1 {
+  font-size: 3.8rem;
+  -webkit-animation: heading .7s ease-in-out .2s;
+  animation: heading .7s ease-in-out .2s;
+}
+
+p {
+  margin-top: 1rem;
+  font-size: 1.6rem;
+  -webkit-animation: fadeInP .9s ease-out .3s;
+  animation: fadeInP .9s ease-out .3s;
+  -webkit-animation-fill-mode: backwards;
+  animation-fill-mode: backwards;
+}
+
+.heading-secondary {
+  font-size: 3.4rem;
   text-transform: uppercase;
-  backface-visibility: hidden;
-  margin-bottom: 5rem;
-  &--main {
-    display: block;
-    font-size: 6rem;
-    letter-spacing: 3rem;
-    font-weight: 400;
-    animation: moveInLeft 2s ease-out;
+  font-weight: 700;
+  background-image: -webkit-gradient(linear, left top, right top, from($color-primary-light),to($color-primary-dark));
+  background-image: linear-gradient(to right, $color-primary-light,$color-primary-dark);
+  display: inline-block;
+  -webkit-background-clip: text;
+  color: transparent;
+  letter-spacing: 2px;
+  -webkit-transition: all .2;
+  transition: all .2;
+  &:hover {
+    -webkit-transform: skewY(2deg) skewX(15deg) scale(1.1);
+            transform: skewY(2deg);
+    text-shadow: .5rem 1rem 2rem rgba($color-black, .2)
   }
-  &--sub {
-    display: block;
-    font-weight: 700;
-    font-size: 1.8rem;
-    letter-spacing: 1.2rem;
-    animation: moveInRight 2s ease-out;
-  }
+
 }
 
-.heading-tertiary{
+.heading-tertiary {
   font-size: $default-font-size;
   font-weight: 700;
   text-transform: uppercase;
@@ -38,5 +50,7 @@ body {
   font-size: $default-font-size;
   &:not(:last-child){
     margin-bottom: 3rem;
-  }
+  } 
 }
+
+

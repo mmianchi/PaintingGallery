@@ -1,22 +1,19 @@
 {
-  "name": "Mahshid",
+  "name": "lovepaiting",
   "version": "1.0.0",
-  "description": "Landing Page",
+  "description": "landing page made by M.Mianchi",
   "main": "index.js",
   "scripts": {
     "compile:sass": "node-sass sass/main.scss css/style.css -w"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mmianchi/template-css.git"
+    "url": "git+https://mmianchi@bitbucket.org/mmianchi/lovepaiting.git"
   },
-  "author": "Mahshid",
+  "author": "Mahshid Mianchi",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/mmianchi/template-css/issues"
-  },
-  "homepage": "https://github.com/mmianchi/template-css#readme",
+  "homepage": "https://bitbucket.org/mmianchi/lovepaiting#readme",
   "devDependencies": {
-    "node-sass": "^4.9.1"
+    "node-sass": "^4.10.0"
   }
 }
